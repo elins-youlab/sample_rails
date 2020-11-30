@@ -4,10 +4,12 @@
 <table>
   <% @users.each do |user| %>
     <tr>
+      <td><%= user.id %></td>
       <td><%= user.first_name %></td>
       <td><%= user.last_name %></td>
       <td><%= user.admin %></td>
       <td><%= user.login %></td>
+      <td><%= link_to 'Редактировать', edit_user_path(id: user.id) %></td>
     </tr>
   <% end %>
 </table>

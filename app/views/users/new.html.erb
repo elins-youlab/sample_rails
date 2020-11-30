@@ -1,0 +1,7 @@
+<%= form_for(@user) do |form| %>
+  <p><label>Фамилия<%= form.text_field :last_name %></label></p>
+  <p><label>Имя<%= form.text_field :first_name %></label></p>
+  <p><label>Админ<%= form.check_box :admin %></label></p>
+  <p><label>Логин<%= form.text_field :login %></label></p>
+  <%= form.submit %>
+<% end %>
