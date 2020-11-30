@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def index
-
+    @users = User.all
   end
 
   def new
@@ -8,9 +8,12 @@ class UsersController < ApplicationController
   end
 
   def create
-    User.create!(params.require(:user).permit(:login, :last_name, :first_name, :admin))
-
-    redirect_to '/'
+    @user = User.create(params.require(:user).permit(:login, :last_name, :first_name, :admin))
+    if @user.valid?
+      redirect_to users_path
+    else
+      render 'new'
+    end
   end
 
   def edit
