@@ -55,6 +55,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 
+gem 'rails-i18n'
 gem 'rspec'
 gem 'simple_form'
 gem 'slim'
