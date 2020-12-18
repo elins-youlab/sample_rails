@@ -56,6 +56,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 
 gem 'rspec'
+gem 'simple_form'
+gem 'slim'
 
 # Run against the latest stable release
 group :development, :test do
