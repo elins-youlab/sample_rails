@@ -10,4 +10,6 @@ html lang="ru"
     .container
       .row
         .col-sm
+          - flash.each do |key, message|
+            p class=key = message
           == yield

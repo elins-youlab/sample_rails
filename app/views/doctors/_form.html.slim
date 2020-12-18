@@ -1,0 +1,8 @@
+= simple_form_for(@doctor) do |form|
+  = form.input :last_name
+  = form.input :first_name
+  = form.input :gender,
+          as: :radio_buttons,
+          collection: gender_collection
+  = form.association :speciality
+  = form.submit
