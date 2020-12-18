@@ -1,0 +1,7 @@
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*_spec.rb'
+Style/AsciiComments:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
