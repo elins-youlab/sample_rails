@@ -13,7 +13,7 @@ class DoctorsController < ApplicationController
     @doctor = Doctor.new(doctor_params)
 
     if @doctor.save
-      flash[:notice] = 'Создание успешно'
+      flash[:notice] = t(:success, scope: 'helpers.flash.create')
       redirect_to doctor_path(@doctor)
     else
       render 'new'
@@ -28,7 +28,7 @@ class DoctorsController < ApplicationController
     @doctor = Doctor.find(params[:id])
 
     if @doctor.update(doctor_params)
-      flash[:notice] = 'Обновление успешно'
+      flash[:notice] = t(:success, scope: 'helpers.flash.update')
       redirect_to doctor_path(@doctor)
     else
       render 'edit'
@@ -43,9 +43,9 @@ class DoctorsController < ApplicationController
     @doctor = Doctor.find(params[:id])
 
     if @doctor.destroy
-      flash[:notice] = 'Удаление успешно'
+      flash[:notice] = t(:success, scope: 'helpers.flash.destroy')
     else
-      flash[:error] = 'Удаление не удалось'
+      flash[:error] = t(:failure, scope: 'helpers.flash.destroy')
     end
 
     redirect_to doctors_path
