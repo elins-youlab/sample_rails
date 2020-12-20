@@ -15,9 +15,11 @@ module ApplicationHelper
     case level
     when 'notice'
       'alert alert-success'
+    when 'warning', 'alert'
+      'alert alert-warning'
     when 'error'
       'alert alert-danger'
-    when 'primary', 'secondary', 'warning', 'info', 'light'
+    when 'primary', 'secondary', 'info', 'light'
       "alert alert-#{level}"
     else
       'alert alert-dark'
