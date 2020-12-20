@@ -11,5 +11,5 @@ html lang="ru"
       .row
         .col-sm
           - flash.each do |key, message|
-            p class=key = message
+            div class=flash_class(key) role="alert" = message
           == yield

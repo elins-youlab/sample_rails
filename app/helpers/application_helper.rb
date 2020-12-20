@@ -10,4 +10,17 @@ module ApplicationHelper
   def translate_gender(gender)
     t(gender, scope: 'activerecord.attributes.genders')
   end
+
+  def flash_class(level)
+    case level
+    when 'notice'
+      'alert alert-success'
+    when 'error'
+      'alert alert-danger'
+    when 'primary', 'secondary', 'warning', 'info', 'light'
+      "alert alert-#{level}"
+    else
+      'alert alert-dark'
+    end
+  end
 end
