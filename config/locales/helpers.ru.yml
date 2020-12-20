@@ -15,3 +15,6 @@ ru:
       speciality:
         create: Добавить
         update: Обновить
+      patient:
+        create: Сохранить
+        update: Сохранить

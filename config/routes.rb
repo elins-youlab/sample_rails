@@ -6,5 +6,5 @@ Rails.application.routes.draw do
 
   resources :specialities, except: :show
   resources :doctors
-  resources :patients, except: %i[new create destroy]
+  resource :patient, except: %i[new create show destroy]
 end

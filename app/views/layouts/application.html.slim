@@ -11,7 +11,7 @@ html lang="ru"
       = link_to t('.site_name'), root_path, class: 'navbar-brand'
       .navbar-nav.ml-auto
         - if user_signed_in?
-          = link_to current_user.email, edit_patient_path(current_user), class: 'nav-item nav-link'
+          = link_to current_user.email, edit_patient_path, class: 'nav-item nav-link'
           = link_to t('.sign_out'), destroy_user_session_path, method: :delete, class: 'nav-item nav-link'
     .container
       .row

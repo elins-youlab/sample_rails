@@ -14,3 +14,9 @@ ru:
         speciality: Специальность
       speciality:
         name: Наименование
+      patient:
+        last_name: Фамилия
+        first_name: Имя
+        gender: Пол
+        phone_number: Номер телефона
+        birthday: Дата рождения
