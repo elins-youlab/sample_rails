@@ -2,11 +2,11 @@ ru:
   helpers:
     flash:
       create:
-        success: Создание успешно'
+        success: Создание успешно
       update:
-        success: Обновление успешно'
+        success: Обновление успешно
       destroy:
-        success: Удаление успешно'
+        success: Удаление успешно
         failure: Удаление не удалось
     submit:
       doctor:

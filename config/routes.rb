@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   root to: 'home#index'
 
   resources :specialities, except: :show
-  resources :doctors
+  resources :doctors do
+    resources :appointments, shallow: true
+  end
   resource :patient, except: %i[new create show destroy]
 end
