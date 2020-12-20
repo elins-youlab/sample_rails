@@ -1,7 +1,7 @@
 h1= t('.title')
 
 = link_to t('.new'), new_doctor_path
-table
+table.table
   thead
     tr
       th= Doctor.human_attribute_name(:last_name)

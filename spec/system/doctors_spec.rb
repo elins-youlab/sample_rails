@@ -3,6 +3,8 @@
 require 'rails_helper'
 
 describe 'Врачи:' do
+  let(:user) { User.create!(email: 'test@example.com', password: 'password') }
+
   let(:otolaryngologist) { Speciality.create!(name: 'Отоларинголог') }
   let(:therapist) { Speciality.create!(name: 'Терапевт') }
   let(:sidorova) do
@@ -21,6 +23,8 @@ describe 'Врачи:' do
       speciality: therapist
     )
   end
+
+  before { login_as(user, scope: :user) }
 
   describe 'список врачей' do
     before do

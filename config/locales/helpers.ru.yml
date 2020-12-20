@@ -12,3 +12,6 @@ ru:
       doctor:
         create: Добавить врача
         update: Обновить данные врача
+      speciality:
+        create: Добавить
+        update: Обновить

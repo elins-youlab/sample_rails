@@ -2,6 +2,7 @@ ru:
   activerecord:
     models:
       doctor: Врач
+      speciality: Специальность
     attributes:
       genders:
         male: М
@@ -11,3 +12,5 @@ ru:
         first_name: Имя
         gender: Пол
         speciality: Специальность
+      speciality:
+        name: Наименование
