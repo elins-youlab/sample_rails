@@ -4,5 +4,5 @@ root = true
 end_of_line = lf
 insert_final_newline = true
 
-[config/credentials.yml.enc]
-end_of_line = unset
+[**.enc]
+insert_final_newline = unset
