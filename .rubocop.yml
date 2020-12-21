@@ -17,5 +17,3 @@ Style/Documentation:
   Enabled: false
 Layout/EndOfLine:
   EnforcedStyle: lf
-Style/StringLiterals:
-  EnforcedStyle: single_quotes
