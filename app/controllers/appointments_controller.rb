@@ -8,7 +8,11 @@ class AppointmentsController < ApplicationController
 
   def create
     @doctor = Doctor.find(params[:doctor_id])
-    @appointment = Appointment.new(doctor: @doctor, patient: current_user.patient)
+    @appointment =
+      Appointment.new(
+        doctor: @doctor,
+        patient: current_user.patient
+      )
     @appointment.assign_attributes(appointments_params)
     if @appointment.save
       flash[:notice] = t(:success, scope: 'helpers.flash.create')
