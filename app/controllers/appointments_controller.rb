@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 class AppointmentsController < ApplicationController
   def new
     @doctor = Doctor.find(params[:doctor_id])
