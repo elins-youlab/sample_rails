@@ -17,3 +17,5 @@ Style/Documentation:
   Enabled: false
 Layout/EndOfLine:
   EnforcedStyle: lf
+Layout/LineLength:
+  Max: 120
