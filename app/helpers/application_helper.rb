@@ -11,7 +11,7 @@ module ApplicationHelper
     t(gender, scope: 'activerecord.attributes.genders')
   end
 
-  def flash_class(level)
+  def flash_class(level) # rubocop:disable Metrics/MethodLength
     case level
     when 'notice'
       'alert alert-success'
